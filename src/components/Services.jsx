@@ -19,7 +19,7 @@ const SERVICES = [
   },
   {
     name: 'Wide Selection',
-    desc: 'Over 500 curated styles across Gowns, Suits, Filipiniana, Barong, Ball Gowns, and Wedding Gowns — in Small, Medium, and Large.',
+    desc: 'Over 200 curated styles across Gowns, Suits, Filipiniana, Barong, Ball Gowns, and Wedding Gowns — in Small, Medium, and Large.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="2" y="7" width="20" height="14" rx="2" />

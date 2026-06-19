@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer({ onPolicies }) {
   return (
     <footer>
       <div className="footer-top">
@@ -20,7 +20,7 @@ export default function Footer() {
             <li><a href="#catalog">Ball Gowns</a></li>
             <li><a href="#catalog">Suit Collection</a></li>
             <li><a href="#catalog">Filipiniana &amp; Barong</a></li>
-            <li><a href="#catalog">Wedding Gowns</a></li>
+            <li><a href="#catalog">Wedding Dress</a></li>
           </ul>
         </div>
 
@@ -28,8 +28,7 @@ export default function Footer() {
           <div className="footer-col-title">Services</div>
           <ul className="footer-links">
             <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Rental Terms</a></li>
+            <li><button onClick={onPolicies} className="footer-policy-btn">Rental Terms</button></li>
             <li><a href="#">Alteration Services</a></li>
           </ul>
         </div>

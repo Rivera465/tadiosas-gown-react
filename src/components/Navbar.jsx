@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 
 const NAV_SECTIONS = [
-  { id: 'home',        label: 'Home' },
   { id: 'collections', label: 'Collections' },
   { id: 'about',       label: 'About Us' },
   { id: 'catalog',     label: 'Rental Catalog' },
+  { id: 'services',    label: "Why Tadiosa's" },
   { id: 'reviews',     label: 'Reviews' },
   { id: 'contact',     label: 'Contact' },
 ]

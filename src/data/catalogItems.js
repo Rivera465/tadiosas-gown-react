@@ -1,35 +1,35 @@
 const items = [
   // Visible on load (first 4)
-  { img: 'black_ball_gown.jpg',        name: 'Midnight Noir Ball Gown',            price: '₱4,500',  cat: 'ballgown', hidden: false },
-  { img: 'blue_formal_suit.jpg',       name: 'Steel Blue 3-Piece Suit',            price: '₱2,800',  cat: 'suit',     hidden: false },
-  { img: 'classic_filipiniana.jpg',    name: 'Classic Champagne Filipiniana',      price: '₱5,800',  cat: 'filipiniana', hidden: false },
-  { img: 'wedding gowm 1.jpg',         name: 'Ivory Lace Cathedral Ball Gown',     price: '₱8,500',  cat: 'wedding',  hidden: false, pos: 'center top' },
+  { img: 'Ball Gown 1(1).png',       name: 'Ball Gown',       popupName: 'Ball Gown 1',       price: '₱1,000', cat: 'ballgown',   hidden: false, gallery: ['Ball Gown 1.png',       'Ball Gown 1(1).png'],       sizes: ['XS','S','M','L'] },
+  { img: 'Premium Tuxedo 1(1).png',  name: 'Premium Tuxedo',  popupName: 'Premium Tuxedo 1',  price: '₱1,000', cat: 'suit',       hidden: false, gallery: ['Premium Tuxedo 1.png',  'Premium Tuxedo 1(1).png'],  sizes: ['M','L','XL'] },
+  { img: 'Alampay 1(1).png',         name: 'Alampay',         popupName: 'Alampay 1',         price: '₱1,000', cat: 'filipiniana',hidden: false, gallery: ['Alampay 1.png',         'Alampay 1(1).png'],         sizes: ['M','L','XL','2XL','3XL'] },
+  { img: 'Dress 1(1).png',           name: 'Wedding Dress',   popupName: 'Wedding Dress 1',   price: '₱1,000', cat: 'wedding',    hidden: false, gallery: ['Dress 1.png',           'Dress 1(1).png'],           sizes: ['S','M','L'] },
 
   // Gowns
-  { img: 'light_blue_gown.jpg',        name: 'Sky Blue Lace A-Line Gown',          price: '₱3,800',  cat: 'gown',     hidden: true },
-  { img: 'purple_gown.jpg',            name: 'Royal Purple Sequin Gown',           price: '₱5,200',  cat: 'gown',     hidden: true },
-  { img: 'red_gown.jpeg',              name: 'Crimson Rose Floral Gown',           price: '₱4,800',  cat: 'gown',     hidden: true },
+  { img: 'Gown 1(1).png',            name: 'Gown',            popupName: 'Gown 1',            price: '₱1,000', cat: 'gown',       hidden: true,  gallery: ['Gown 1.png',            'Gown 1(1).png'],            sizes: ['S','M','L'] },
+  { img: 'Gown 2(1).png',            name: 'Gown',            popupName: 'Gown 2',            price: '₱1,000', cat: 'gown',       hidden: true,  gallery: ['Gown 2.png',            'Gown 2(1).png'],            sizes: ['M','L'] },
+  { img: 'Gown 3(1).png',            name: 'Gown',            popupName: 'Gown 3',            price: '₱1,000', cat: 'gown',       hidden: true,  gallery: ['Gown 3.png',            'Gown 3(1).png'],            sizes: ['S','M','L'] },
 
   // Ball Gowns
-  { img: 'blue_ball_gown.jpg',         name: 'Starlit Blue Tulle Gown',            price: '₱4,200',  cat: 'ballgown', hidden: true },
-  { img: 'vampire_ball_gown.jpg',      name: 'Crimson Noir Ball Gown',             price: '₱5,000',  cat: 'ballgown', hidden: true },
+  { img: 'Ball Gown 2(1).png',       name: 'Ball Gown',       popupName: 'Ball Gown 2',       price: '₱1,000', cat: 'ballgown',   hidden: true,  gallery: ['Ball Gown 2.png',       'Ball Gown 2(1).png'],       sizes: ['XS','S','M','L'] },
+  { img: 'Ball Gown 3(1).png',       name: 'Ball Gown',       popupName: 'Ball Gown 3',       price: '₱1,000', cat: 'ballgown',   hidden: true,  gallery: ['Ball Gown 3.png',       'Ball Gown 3(1).png'],       sizes: ['XS','S','M','L'] },
 
   // Suits
-  { img: 'formal_suits.jpg',           name: 'Classic Navy Formal Suit',           price: '₱2,500',  cat: 'suit',     hidden: true },
-  { img: 'gray_suit.jpg',              name: 'Slim-Fit Gray Suit',                 price: '₱2,600',  cat: 'suit',     hidden: true },
+  { img: 'Premium Tuxedo 2(1).png',  name: 'Premium Tuxedo',  popupName: 'Premium Tuxedo 2',  price: '₱1,000', cat: 'suit',       hidden: true,  gallery: ['Premium Tuxedo 2.png',  'Premium Tuxedo 2(1).png'],  sizes: ['M','L','XL'] },
+  { img: 'Premium Tuxedo 3(1).png',  name: 'Premium Tuxedo',  popupName: 'Premium Tuxedo 3',  price: '₱1,000', cat: 'suit',       hidden: true,  gallery: ['Premium Tuxedo 3.png',  'Premium Tuxedo 3(1).png'],  sizes: ['L','XL'] },
 
   // Filipiniana
-  { img: 'modern_filipiniana.jpg',     name: 'Modern Two-Tone Filipiniana',        price: '₱4,800',  cat: 'filipiniana', hidden: true },
-  { img: 'traditional_filipiniana.jpg',name: 'Traditional Lace Filipiniana',       price: '₱6,200',  cat: 'filipiniana', hidden: true },
+  { img: 'Alampay 2(1).png',         name: 'Alampay',         popupName: 'Alampay 2',         price: '₱1,000', cat: 'filipiniana',hidden: true,  gallery: ['Alampay 2.png',         'Alampay 2(1).png'],         sizes: ['M','L','XL','2XL','3XL'] },
+  { img: 'Bolero 1(1).png',          name: 'Bolero',          popupName: 'Bolero 1',          price: '₱1,000', cat: 'filipiniana',hidden: true,  gallery: ['Bolero 1.png',          'Bolero 1(1).png'],          sizes: ['M','L','XL','2XL','3XL'] },
 
   // Barong
-  { img: 'barong_tagalog.jpg',         name: 'Heritage Piña Barong',               price: '₱2,500',  cat: 'barong',   hidden: true, pos: 'center top' },
-  { img: 'classic_barong.jpg',         name: 'Classic Floral Barong',              price: '₱2,800',  cat: 'barong',   hidden: true },
-  { img: 'deluxe_barong.jpg',          name: 'Deluxe Gold-Embroidered Barong',     price: '₱3,200',  cat: 'barong',   hidden: true },
+  { img: 'Barong 1(1).png',          name: 'Barong',          popupName: 'Barong 1',          price: '₱1,000', cat: 'barong',     hidden: false, gallery: ['Barong 1.png',          'Barong 1(1).png'],          sizes: ['S'] },
+  { img: 'Barong 2(1).png',          name: 'Barong',          popupName: 'Barong 2',          price: '₱1,000', cat: 'barong',     hidden: true,  gallery: ['Barong 2.png',          'Barong 2(1).png'],          sizes: ['L'] },
+  { img: 'Barong 3(1).png',          name: 'Barong',          popupName: 'Barong 3',          price: '₱1,000', cat: 'barong',     hidden: true,  gallery: ['Barong 3.png',          'Barong 3(1).png'],          sizes: ['XL'] },
 
-  // Wedding Gowns
-  { img: 'wedding gown 2.jpg',         name: 'Champagne Satin Off-Shoulder Gown',  price: '₱9,200',  cat: 'wedding',  hidden: true, pos: 'center top' },
-  { img: 'wedding gown 3.jpg',         name: 'Crystal Beaded Bridal Ball Gown',    price: '₱10,500', cat: 'wedding',  hidden: true, pos: 'center top' },
+  // Wedding Dresses
+  { img: 'Dress 2(1).png',           name: 'Wedding Dress',   popupName: 'Wedding Dress 2',   price: '₱1,000', cat: 'wedding',    hidden: true,  gallery: ['Dress 2.png',           'Dress 2(1).png'],           sizes: ['S','M','L'] },
+  { img: 'Dress 3(1).png',           name: 'Wedding Dress',   popupName: 'Wedding Dress 3',   price: '₱1,000', cat: 'wedding',    hidden: true,  gallery: ['Dress 3.png',           'Dress 3(1).png'],           sizes: ['S','M','L'] },
 ]
 
 export default items

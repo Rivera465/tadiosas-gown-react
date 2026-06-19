@@ -9,15 +9,18 @@ import Catalog      from './components/Catalog'
 import Services     from './components/Services'
 import Testimonials from './components/Testimonials'
 import Contact      from './components/Contact'
-import Footer       from './components/Footer'
+import Footer         from './components/Footer'
+import PoliciesModal  from './components/PoliciesModal'
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false)
+  const [policiesOpen, setPoliciesOpen] = useState(false)
 
   return (
     <>
       <Navbar onBookNow={() => setModalOpen(true)} />
       {modalOpen && <ContactModal onClose={() => setModalOpen(false)} />}
+      {policiesOpen && <PoliciesModal onClose={() => setPoliciesOpen(false)} />}
 
       <Hero />
       <Marquee />
@@ -27,7 +30,7 @@ export default function App() {
       <Services />
       <Testimonials />
       <Contact />
-      <Footer />
+      <Footer onPolicies={() => setPoliciesOpen(true)} />
     </>
   )
 }

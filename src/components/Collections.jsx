@@ -1,9 +1,9 @@
 const COLLECTIONS = [
-  { img: 'black_ball_gown.jpg',    alt: 'Ball Gowns',      tag: 'Grand & Glamorous',    name: 'Ball Gowns',      count: '50+ styles available', pos: 'center' },
-  { img: 'blue_formal_suit.jpg',   alt: 'Suits',           tag: 'For the Gentleman',    name: 'Suits',           count: '80+ styles',           pos: 'center' },
-  { img: 'classic_filipiniana.jpg',alt: 'Filipiniana',     tag: 'Cultural Heritage',    name: 'Filipiniana',     count: '60+ styles',           pos: 'center' },
-  { img: 'barong_tagalog.jpg',     alt: 'Barong Tagalog',  tag: 'National Formal Wear', name: 'Barong Tagalog',  count: '40+ styles',           pos: 'center top' },
-  { img: 'wedding gowm 1.jpg',     alt: 'Wedding Gowns',   tag: 'Bridal & Formal',      name: 'Wedding Gowns',   count: '30+ styles',           pos: 'center top' },
+  { img: 'Ball Gown 2(1).png',         alt: 'Ball Gowns',      tag: 'Grand & Glamorous',    name: 'Ball Gowns',      count: '3 styles available',   pos: 'center top' },
+  { img: 'Premium Tuxedo 1(1).png',    alt: 'Suits',           tag: 'For the Gentleman',    name: 'Suits',           count: '3 styles',             pos: 'center top' },
+  { img: 'Alampay 1(1).png',           alt: 'Filipiniana',     tag: 'Cultural Heritage',    name: 'Filipiniana',     count: '3 styles',             pos: 'center top' },
+  { img: 'Barong 1(1).png',            alt: 'Barong',          tag: 'National Formal Wear', name: 'Barong',          count: '3 styles',             pos: 'center top' },
+  { img: 'Dress 1(1).png',             alt: 'Wedding Dress',   tag: 'Bridal & Formal',      name: 'Wedding Dress',   count: '3 styles',             pos: 'center top' },
 ]
 
 export default function Collections() {

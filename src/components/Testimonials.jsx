@@ -1,18 +1,24 @@
 const REVIEWS = [
   {
-    quote: '"The Aurelia Silk Ballgown was absolutely breathtaking. Every guest complimented my gown — Tadiosa\'s made my debut unforgettable."',
-    name: 'Maria Reyes',
-    occasion: 'Debut Celebration',
+    quote: 'Highly recommend this rental shop! The barong I rented was clean, looked brand new, and was budget-friendly. The staff were very accommodating and incredibly kind. Great experience overall!',
+    name: 'Nikki Franco',
+    occasion: '6 months ago',
+    initials: 'N',
+    avatarColor: '#C0392B',
   },
   {
-    quote: '"Found the perfect Barong for my son\'s Filipiniana-themed celebration in just one visit. The staff was so helpful and the fit was spot-on after a quick alteration."',
-    name: 'Eduardo Santos',
-    occasion: 'Filipiniana Event',
+    quote: 'Absolutely loved my experience! The gowns are stunning and the service was exceptional. Highly recommended for anyone looking for quality and elegance.',
+    name: 'Licca Clabita',
+    occasion: '3 months ago',
+    initials: 'LC',
+    avatarColor: '#5D6D7E',
   },
   {
-    quote: '"We rented our entire entourage\'s gowns from Tadiosa\'s. The quality and service are unmatched — we\'ll be back for every occasion."',
-    name: 'Carla Mendoza',
-    occasion: 'Entourage Rental',
+    quote: "Big thanks to Tadiosa's Gown Rental. Last minute, they accommodate my inquiries instantly and the owner is very responsive. Highly recommended. Next po ulit. 😊",
+    name: 'Jamm Briones',
+    occasion: '6 months ago',
+    initials: 'JB',
+    avatarColor: '#2C3E50',
   },
 ]
 
@@ -23,14 +29,21 @@ export default function Testimonials() {
         <div className="section-label" style={{ justifyContent: 'center', color: 'var(--gold)' }}>
           What Our Clients Say
         </div>
-        <h2 className="section-title" style={{ color: 'var(--cream)' }}>Stories of Elegance</h2>
+        <h2 className="section-title" style={{ color: '#ffffff' }}>Stories of Elegance</h2>
       </div>
       <div className="test-grid">
-        {REVIEWS.map(({ quote, name, occasion }) => (
+        {REVIEWS.map(({ quote, name, occasion, initials, avatarColor }) => (
           <div className="test-card" key={name}>
-            <div className="stars">★ ★ ★ ★ ★</div>
+            <div className="test-header">
+              <div className="test-avatar" style={{ background: avatarColor }}>
+                {initials}
+              </div>
+              <div className="test-meta">
+                <div className="test-name">{name}</div>
+                <div className="stars">★ ★ ★ ★ ★</div>
+              </div>
+            </div>
             <div className="test-quote">{quote}</div>
-            <div className="test-name">{name}</div>
             <div className="test-occasion">{occasion}</div>
           </div>
         ))}
