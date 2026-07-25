@@ -77,6 +77,12 @@ function ItemModal({ item, onClose }) {
           <a href="#contact" className="item-modal-inquire" onClick={onClose}>
             Inquire Now
           </a>
+          <button className="item-modal-ar-btn" onClick={onClose} title="Coming Soon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/>
+            </svg>
+            AR Try-On — Coming Soon
+          </button>
         </div>
       </div>
     </div>
@@ -169,7 +175,7 @@ export default function Catalog() {
               </div>
             </div>
             <div className="product-info">
-              <div className="product-name">{item.name}</div>
+              <div className="product-name">{item.popupName || item.name}</div>
               <div className="product-meta">
                 <span className="product-price">{item.price}</span>
               </div>
